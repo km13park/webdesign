@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Visit Korea</title>
+    <meta name="viewport" contect="width=device-width, intitial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize_v8.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+    
+<style>
+    body{
+        background-color: #eee;
+        font-family: 'Open Sans', Verdana, sans-serif;
+    }
+    #wrapper {
+        width: 100%;
+        max-width: 1170px;
+        min-width: 300px;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+    
+    header, article{
+        padding: 1em;
+    }
+    a{
+        text-decoration: none;
+        outline: none;
+    }
+    .footer{
+        width:100%;
+        height: auto;
+        margin: auto;
+        background: #e1e4e8;
+        padding:20px 0px;
+    }
+    .footersocial{
+        width: 100%;
+        height: auto;
+        margin: auto;   
+    }
+    .footersocial ul{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .footersocial ul li{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 0px 10px;
+        border-radius: 100%;
+        background: #79c785;
+        
+    }
+    .footersocial ul li a{
+        color:#ffff;
+        font-size: 25px;
+    }
+    .footersocial ul li a i{
+        line-height: 50px;
+        
+    }
+    .footermenu{
+        width:100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .footermenu ul{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .footermenu ul li{
+        display: inline-block;
+        margin: 0px 15px;
+    }
+    .footermenu ul li a{
+        font-size: 1em;
+        font font-weight: 600;
+        color: black;
+        text-transform: uppercase;
+    }
+    .footerbottom{
+        width: 60%;
+        height: auto;
+        margin: auto;
+        background: #e1e4e8;
+        padding: 10px;
+    }
+    .footerbottom p{
+        font-family: 'Nanum Pen Script', cursive,sans-serif;
+        font-size: 1.4em;
+        text-align: center;
+        color: #34c0eb;
+        font-weight: 300;
+    }
+    
+    #col1, #col2{
+        box-sizing: border-box;
+        text-align: justify;
+    }
+    
+    #maincontent{
+        background-color: white;
+        overflow: hidden;
+        line-height: 1.3rem;
+    }
+    #top{
+        box-sizing: border-box;
+        height: 200px;
+        padding: 0;
+        position: relative;
+        background-color: paleturquoise;
+        background-image: url(Gwangju/mudeungsan_main_1200.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: auto 250px;   
+    }
+    .reponsive_pic{
+        max-width: 100%;
+        height: auto;
+    }
+    .Title{
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 3.5em;
+        color:green;
+        text-align: center;
+        position: relative;
+    }
+    .Title:before{
+        content: "";
+        display: block;
+        width: 450px;
+        height:2px;
+        background: green;
+        position: absolute;
+        right: 0;
+        top: 50%;
+    }
+    
+    .Title:after{
+        content: "";
+        display: block;
+        width: 450px;
+        height:2px;
+        background: green;
+        position: absolute;
+        left: 0;
+        top: 50%;
+    }
+
+    .title2{
+        font-family: 'Nanum Pen Script', cursive;
+        text-align: center;
+        font-size: 2em;
+        
+    }
+    .center{
+        text-align: center;
+        font-family: 'Nanum Pen Script', cursive,sans-serif;
+        text-decoration: underline;
+        font-size: 3em;
+    }
+    
+    #gallery{
+        margin: 2.5em 0 0 0 0
+    }
+    
+    #gallery div{
+        display: block;
+        margin: 10px;
+        padding: .5em;
+    }
+    #gallery div div{
+        border: 2px solid rgba(183,222,158);
+        border-radius: .5em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        margin: .5em 0;
+
+    }
+    .button {
+        background-color: #79c785;
+        float:right;
+        border: none;
+        border-radius: 0.5em;
+        color: white;
+        padding: 15px 35px;
+        text-align: center;
+        font-size: 16px;
+        cursor:pointer;
+        }
+    .button:hover {
+            background-color: #72bfd4;
+        }
+    
+    #nav1{
+        background-color: #e1e4e8;
+        position: sticky;
+    }
+    #nav1 ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    #nav1 a{
+        text-decoration: none;
+        text-align: center;
+        color:black;
+        display: block;
+        padding: 10px;
+    }
+    #nav1 a:hover{
+        background-color:#34c0eb; 
+    }
+     #col2 p:first-of-type:first-letter{
+        color:#72bfd4;
+        font-size: 80px;
+        padding-right: 8px;
+        float: left;
+        line-height: 0.7;
+         
+    }
+
+    
+    @media screen and (min-width:576px) {
+       
+        #maincontent{
+            display: flex;
+            justify-content: space-between;
+        }
+        #col1, #col2{
+            flex-basis: 47%;
+        }
+        #col2{
+            padding:.5em;
+        }
+        
+        #nav1 ul{
+            display: flex;
+        }
+        #nav1 li{
+            flex: 1 1 0;
+        }
+        #top{
+            height: 300px;
+            background-size: auto;
+            background-position: 50% top;
+        }
+        
+        #gallery div{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+                   
+        }
+        #gallery div div {
+            flex-basis: 32%
+        }
+    }
+    
+</style>
+</head>
+    
+<body> 
+      
+
+<div id="wrapper">
+    <header id="top">
+
+    </header>
+<nav id="nav1">
+    <ul>
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="Culture.html">Culture</a></li>
+    <li><a href="Seoul.html">Seoul</a></li>
+    <li><a href="Busan.html">Busan</a></li>
+    <li><a href="Gwangju.html">Gwangju</a></li>
+    </ul>
+    </nav>
+    
+    <article>
+<h1 class="Title"> Visit Gwangju</h1>
+  <section id="maincontent">
+  <div id="col2">
+    <h2 class="title2">The beauty of Gwangju</h2>
+    <p>Getting tired of urban tour? Do you want to go to the place where you can find old, pastoral Korea on display? Then, going to Gwangju is your best choice. Located in South west in South Korea, it's frequently overlooked for tourists even if it's the sixth largest city in the country. But, Gwangju has been the center of art in the country over two decades since it hosted Biennale in 1995. It offers several great modern art museums and exhibition. Gwangju has been the center of the democratic movement of Korean modern politics history. The infamous May 18 Massacre in Gwangju is widely considered to have been the birth of the nation's democracy. So, visiting Gwangju provides an opportunity to feel the authentic Korea and observe the democratic development in South Korea. And while it's rapidly catching up the rest of the country when it comes to adopting the western cultures, it still preserves the old, traditional cultures. From the annual kimchi festival to the well preserved temples which were built more than a thousand years ago, Gwangju gives you the benefit of seeing authentic Korea.</p>
+  </div>  
+  <div id="col1">
+       <img src="Gwangju/gwangju_memorial_600.jpg" alt="Memorial">
+      <p>The May 18th Democratisation Movement ended almost as quickly as it began - in a mere couple of days. Its significance in history, however, lasts till this day. Its inscription as part of the UNESCO Memory of the World, the extent of the memorial park, and the many thought-provoking statues lie as a reminder of the difficulties faced in their fight against what they perceived as a military dictatorship.</p>
+      <p></p>
+  </div>
+</section>
+    
+    <section id="gallery">
+        <h2 class="center">Where to visit</h2>
+        <div>
+            <div><h3>Mudeungsan National Park</h3>
+            <img src="Gwangju/mudeungsan_300.jpg" class="responsive_pic" alt="Busan Tower">
+            <p>Mudeungsan National Park provides a view of Gwangju after invigorating hike. With towering 1,187 meters tall, the rocky outcrops are a sight to behold. Though the park is beautiful all four seasons, the colorful autumn foliage is mesmerizing.</p>    
+            <p>Mudeungsan National Park</p>  
+            <button class="button">Tour</button>
+        </div>         
+        <div><h3>Folk Museum</h3>
+            <img src="Gwangju/folkm_300.jpg" class="responsive_pic" alt="Busan Tower">
+            <p>Folk Museum in Gwangju presents historical artifacts that were used in the daily lives of Korean people in the past. Through the displays, visitors can learn about the domestic and agricultural lifestyles, as well as Korea’s cultural beliefs.</p>
+            <p>For tour information click here</p> 
+            <button class="button">Tour</button>
+        </div>
+        <div><h3>Museum of Art</h3>
+            <img src="Gwangju/gwangju-museum-of-art_300.jpg" class="responsive_pic" alt="Haeundae Beach">
+            <p>Gwangju has been the center of modern art in South Korea since it has been hosting international art exhibition called Biennale every two years. Managed by the same people who founded the Gwangju Biennale, this art museum shows up-and-coming Korean artists.</p>
+            <p>For tour information click here</p>
+            <button class="button">Tour</button>
+        </div>
+        <div><h3>Penguin Village</h3>
+            <img src="Gwangju/penguin_300.jpg" class="responsive_pic" alt="Jagalchi Market">
+            <p>Penguin Village has a random collection of oddities and narrow, old-town winding streets inside. Do you want to find electric arts or street art? Then come and check it out. You will find interesting architecture and great coffee shops.</p>
+            <p>For tour information click here</p>
+            <button class="button">Tour</button>
+        </div>
+        <div><h3>Jeungsimsa Temple</h3>
+            <img src="Gwangju/jeungsimsa_300.jpg" class="responsive_pic" alt="Cultural Village">
+            <p>Jeungsimsa Temple is the representative Buddhist temple in Gwangju. You can also find the cultural heritage here. Originally founded in Silla Dynasty, it was reconstructed after it burned down by Japanese invasion in Joseon Dynasty. </p>
+            <p>For tour information click here</p>
+            <button class="button">Tour</button>
+        </div>
+
+        <div><h3>Boseong Green Tea Field</h3>
+            <img src="Gwangju/boseong_300.jpg" class="responsive_pic" alt="Gwangbokdong Food Street">
+            <p>About an hour driving away from Gwangju, Boseong green tea field is worth a day trip. The rolling hills of lush green tea plantaions are stunning. Also, you'll learn how the tea leaves are process and sample freshly brewed tea.</p>
+            <p>For tour information click here</p>
+            <button class="button">Tour</button>
+            </div>
+        </div>
+        </section>
+    </article>
+    <div class="footer">
+    <div class="footersocial">
+        <ul>
+        <li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        </ul>
+        </div>
+
+    <div class="footermenu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Culture.html">Culture</a></li>
+            <li><a href="Seoul.html">Seoul</a></li>
+            <li><a href="Busan.html">Busan</a></li>
+            <li><a href="Gwangju.html">Gwangju</a></li>
+    </ul>
+    
+    </div>
+    <div class="footerbottom">
+        <p>Design by: Paulina Casillas </p>
+        </div>
+            </div>
+    </div>
+
+
+ </body>
+    

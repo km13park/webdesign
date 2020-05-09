@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Visit Korea</title>
+    <meta name="viewport" contect="width=device-width, intitial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize_v8.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+    
+<style>
+    body{
+        background-color: #eee;
+        font-family: 'Open Sans', Verdana, sans-serif;
+    }
+    #wrapper {
+        width: 100%;
+        max-width: 1170px;
+        min-width: 300px;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+    
+    header, article{
+        padding: 1em;
+    }
+    a{
+        text-decoration: none;
+        outline: none;
+    }
+    .footer{
+        width:100%;
+        height: auto;
+        margin: auto;
+        background: #e1e4e8;
+        padding:20px 0px;
+    }
+    .footersocial{
+        width: 100%;
+        height: auto;
+        margin: auto;   
+    }
+    .footersocial ul{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .footersocial ul li{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 0px 10px;
+        border-radius: 100%;
+        background: #79c785;
+        
+    }
+    .footersocial ul li a{
+        color:#ffff;
+        font-size: 25px;
+    }
+    .footersocial ul li a i{
+        line-height: 50px;
+        
+    }
+    .footermenu{
+        width:100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .footermenu ul{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .footermenu ul li{
+        display: inline-block;
+        margin: 0px 15px;
+    }
+    .footermenu ul li a{
+        font-size: 1em;
+        font font-weight: 600;
+        color: black;
+        text-transform: uppercase;
+    }
+    .footerbottom{
+        width: 60%;
+        height: auto;
+        margin: auto;
+        background: #e1e4e8;
+        padding: 10px;
+    }
+    .footerbottom p{
+        font-family: 'Nanum Pen Script', cursive,sans-serif;
+        font-size: 1.4em;
+        text-align: center;
+        color: #34c0eb;
+        font-weight: 300;
+    }
+    
+    #col1, #col2{
+        box-sizing: border-box; 
+    }
+    
+    #maincontent{
+        background-color: white;
+        overflow: hidden;
+        line-height: 1.3rem;
+    }
+    #top{
+        box-sizing: border-box;
+        height: 200px;
+        padding: 0;
+        position: relative;
+        background-color: paleturquoise;
+        background-image: url(Seoul/seoul_head_1200_2.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: auto 250px;   
+    }
+    .reponsive_pic{
+        max-width: 100%;
+        height: auto;
+    }
+    .Title{
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 3.5em;
+        color:green;
+        text-align: center;
+        position: relative;
+    }
+    .Title:before{
+        content: "";
+        display: block;
+        width: 450px;
+        height:2px;
+        background: green;
+        position: absolute;
+        right: 0;
+        top: 50%;
+    }
+    
+    .Title:after{
+        content: "";
+        display: block;
+        width: 450px;
+        height:2px;
+        background: green;
+        position: absolute;
+        left: 0;
+        top: 50%;
+    }
+
+    .title2{
+        font-family: 'Nanum Pen Script', cursive;
+        text-align: center;
+        font-size: 2em;
+        
+    }
+    .center{
+        text-align: center;
+        font-family: 'Nanum Pen Script', cursive,sans-serif;
+        text-decoration: underline;
+        font-size: 3em;
+    }
+    
+    #gallery{
+        margin: 2.5em 0 0 0 0
+    }
+    
+    #gallery div{
+        display: block;
+        margin: 10px;
+        padding: .5em;
+    }
+    #gallery div div{
+        border: 2px solid rgba(183,222,158);
+        border-radius: .5em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        margin: .5em 0;
+
+    }
+    .button {
+        background-color: #79c785;
+        float:right;
+        border: none;
+        border-radius: 0.5em;
+        color: white;
+        padding: 15px 35px;
+        text-align: center;
+        font-size: 16px;
+        cursor:pointer;
+        }
+    .button:hover {
+            background-color: #72bfd4;
+        }
+    
+    #nav1{
+        background-color: #e1e4e8;
+        position: sticky;
+    }
+    #nav1 ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    #nav1 a{
+        text-decoration: none;
+        text-align: center;
+        color:black;
+        display: block;
+        padding: 10px;
+    }
+    #nav1 a:hover{
+        background-color:#34c0eb; 
+    }
+     #col2 p:first-of-type:first-letter{
+        color:#72bfd4;
+        font-size: 80px;
+        padding-right: 8px;
+        float: left;
+        line-height: 0.7;
+         
+    }
+
+    
+    @media screen and (min-width:576px) {
+       
+        #maincontent{
+            display: flex;
+            justify-content: space-between;
+        }
+        #col1, #col2{
+            flex-basis: 47%;
+        }
+        #col2{
+            padding:.5em;
+        }
+        
+        #nav1 ul{
+            display: flex;
+        }
+        #nav1 li{
+            flex: 1 1 0;
+        }
+        #top{
+            height: 300px;
+            background-size: auto;
+            background-position: 50% top;
+        }
+        
+        #gallery div{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+                   
+        }
+        #gallery div div {
+            flex-basis: 32%
+        }
+    }
+    
+</style>
+</head>
+    
+<body> 
+      
+
+<div id="wrapper">
+    <header id="top">
+
+    </header>
+<nav id="nav1">
+    <ul>
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="Culture.html">Culture</a></li>
+    <li><a href="Seoul.html">Seoul</a></li>
+    <li><a href="Busan.html">Busan</a></li>
+    <li><a href="Gwangju.html">Gwangju</a></li>
+    </ul>
+    </nav>
+    
+    <article>
+<h1 class="Title"> Visit Seoul</h1>
+  <section id="maincontent">
+  <div id="col2">
+    <h2 class="title2">Seoul's Magic</h2>
+    <p>Ask your non Korean friends what comes to their mind when they think of Korea. Yes, they will more like to say Seoul and there you go. It's the must-go or hard-to-skip place in Korea. Seoul, the capital of South Korea, is the biggest metropolis in the country where high-tech buildings and traditional palaces coexist. Having been the captial of the country over 600 years makes this city speical. Beyond just being the political center, it also makes this city cultural and historical center in the country. In the modern era, Seoul has been rapidly and dynamically changing culturally when it comes to adopting western values. From old to new, explore all that the city has to offer. Whether you prefre modern architecture or the charm of the royal palaces, Seoul has everything! Its dynamic and entertaining attractions include K-pops, beauty spots and shopping places. If you want to step away from the crowd and have relaxation, the city also offers Han River and Namsan Mountain. Afraid to find ways or get lost? Don't worry. The world best Metropolitan Subway stretches out from the center of Seoul to rural areas.</p>
+  </div>  
+  <div id="col1">
+       <img src="Seoul/han-river2_600.jpg" alt="Han River">
+      <p>As Hangang Park is near the financial district of Seoul, there are lots of great dining options on the island. Han River bicycle rentals make it easy to get around, so hop on your bike and get to a great restaurant!</p>
+  </div>
+</section>
+    
+    <section id="gallery">
+        <h2 class="center">Where to visit</h2>
+        <div>
+            <div><h3>Namsan Tower</h3>
+            <img src="Seoul/n-tower-autumn_300.jpg" class="responsive_pic" alt="Busan Tower">
+            <p>Make your way to the top of the mountain at the heart of Seoul. It also provides the cable car for those who wants to avoid hiking. If you're looking for a romantic place to have dinner, go at sunset. The restaurant offers panoramic perspectives across the city.</p>    
+            <p>For tour information click here</p>  
+            <button class="button">Tour</button>
+        </div>         
+        <div><h3>Gyeongbokgung Palace</h3>
+            <img src="Seoul/Gyeongbokgung-Palace_300.jpg" class="responsive_pic" alt="Busan Tower">
+            <p>Gyeongbokgung Palace is the grandest and the most beatiful palace among five major palaces in Seoul. Originally built in 1395, it has been reconstructed throughout a tumultuous history. By renting Korean Dress, you will get free admission to Gyeongbokgung Palace. You can experience to be a king here.</p>
+            <p>For tour information click here</p> 
+            <button class="button">Tour</button>
+        </div>
+        <div><h3>Lotte World</h3>
+            <img src="Seoul/lotte_300.jpg" class="responsive_pic" alt="Haeundae Beach">
+            <p>Lotte World is the largest recreation complex located in downtown Seoul. It has the world's largest indoor theme park called Indoor Adventure, and an outdoor theme park called Magic Island. It also provides a luxury hotel, department stores and a movie theater in one place.</p>
+            <p>For tour information click here</p>
+            <button class="button">Tour</button>
+        </div>
+        <div><h3>Olympic Park</h3>
+            <img src="Seoul/Olympic-Park_300.jpg" class="responsive_pic" alt="Jagalchi Market">
+            <p>Olympic Park was built to host the 1998 Summer Olympics. Besides Gymnasisum and arenas, it provides beautiful sculpture park and wild flower garden for visitors to relax and unwind. To get around the large park leisurely, you may want to rent a bicycle.</p>
+            <p>For tour information click here</p>
+            <button class="button">Tour</button>
+        </div>
+        <div><h3>Myeondong</h3>
+            <img src="seoul/md_good_300.jpg" class="responsive_pic" alt="Cultural Village">
+            <p>Welcome to the largest shopping district in the country. Many brand name shops and department stores line the streets and alleys. The most popular products include accessories and cosmetics. Moreover, you can find designer brands clothes with excellent design and quality.</p>
+            <p>For tour information click here</p>
+            <button class="button">Tour</button>
+        </div>
+
+        <div><h3>Insadong</h3>
+            <img src="Seoul/insadong_300.jpg" class="responsive_pic" alt="Gwangbokdong Food Street">
+            <p>Insadong is a must-go destination for all tourists visiting Seoul. It is known for its extensive array of shops and traditional tea houses. Especially, Ssamzie-gil Market is the most famous place here. The mall is filled with ceramics, traditional Korean item.</p>
+            <p>For tour information click here</p>
+            <button class="button">Tour</button>
+            </div>
+        </div>
+        </section>
+    </article>
+    <div class="footer">
+    <div class="footersocial">
+        <ul>
+        <li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        </ul>
+        </div>
+
+    <div class="footermenu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Culture.html">Culture</a></li>
+            <li><a href="Seoul.html">Seoul</a></li>
+            <li><a href="Busan.html">Busan</a></li>
+            <li><a href="Gwangju.html">Gwangju</a></li>
+    </ul>
+    
+    </div>
+    <div class="footerbottom">
+        <p>Design by: Paulina Casillas </p>
+        </div>
+            </div>
+    </div>
+
+
+ </body>
+    
